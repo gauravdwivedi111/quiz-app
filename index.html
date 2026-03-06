@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <div id="quiz-container" class="card">
+            <h1 class="title">Choose a Section</h1>
+            <div class="sections">
+                <div class="section" data-section="0">General Knowledge</div>
+                <div class="section" data-section="1">Science</div>
+                <div class="section" data-section="2">Mathematics</div>
+                <div class="section" data-section="3">Indian History</div>
+            </div>
+        </div>
+
+        <div id="question-container" class="card hidden">
+            <div class="top-bar">
+                <div id="progress-text"></div>
+                <div id="score">Score: 0</div>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+
+            <h2 id="question" class="question"></h2>
+            <div id="options" class="options"></div>
+
+            <button id="next-button" class="next-btn">Next Question</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
